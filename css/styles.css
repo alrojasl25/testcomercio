@@ -1,0 +1,14 @@
+header {
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+}
+footer{
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+    height: 50px;	
+}
+.contenedor{
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+}

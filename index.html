@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>EComercio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/styles.css">  	
+	<script>
+		var numero = [];
+	</script>
+
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="logo/logo.png" width="500">
+		</div>
+		<div>
+			<h1 align="center">Ordenador Ascendente de Series</h1>
+		</div>
+	</header>
+
+<script>
+
+/*0:Este código permite ingresar cinco numeros aleatorios y enteros*/
+numero.push(prompt("Introdusca el primer numero"));
+
+numero.push(prompt("Introdusca el segundo numero"));
+
+numero.push(prompt("Introdusca el tercer numero"));
+
+numero.push(prompt("Introdusca el cuarto numero"));
+
+numero.push(prompt("Introdusca el quinto numero"));
+
+</script>
+
+<div class="contenedor">
+	<div class="row">
+		<div class="col-md-6">
+				<p>Serie No Ordenada</p>
+				<SCRIPT>				
+				/*::este for lista los numeros ingresados::*/
+				for (var i = 0; i <=4; i++) {
+				document.write("<p>" + numero[i] + "</p></br>");
+				};
+				</SCRIPT>
+				
+		</div>
+		<div class="col-md-6">
+				<p>Serie Ordenada de forma Ascedente</p>
+				<SCRIPT>
+				/*::for para realizar la comparación y ordenar de forma ascedente::*/
+				for (i = 0; i <= 4; i++) {
+					for (j = i+1; j <= 4; j++) {
+						if(numero[i]>numero[j])
+						{
+							var temp = numero[i];
+							numero[i]= numero[j];
+							numero[j]= temp;
+						}
+					};
+				};
+				/*::for para listar la serie completa pero ordenada::*/
+				for (var c = 0; c <= 4; c++) {
+				document.write("<p>"+ numero[c] + "</p></br>");
+				};
+				</SCRIPT>
+		</div>
+	</div>
+</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+
+<footer>
+	<p>Todos los derechos reservados 2017</p>
+</footer>
+
+
+</body>
+</html>
